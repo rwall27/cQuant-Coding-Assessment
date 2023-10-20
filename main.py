@@ -70,12 +70,11 @@ def Question7(CombinedData, CombinedDataByHour):
     sns.boxplot(x = "Date", y ="AbsoluteDifference", data = CombinedDataDates, showfliers = False)
     plt.xlabel('Month')
     plt.title('Distribution of Absolute Difference in Power Prices by Month')
-    plt.show()
     plt.savefig("summary_tables_and_images/Boxplot.png")
+    plt.show()
     sns.lineplot(x = "Hour", y = "mean", data = CombinedDataByHour)
     plt.xlabel('Hour')
     plt.title('Mean of Absolute Difference in Power Prices by Hour')
-    plt.show()
     plt.savefig("summary_tables_and_images/Lineplot.png")
 
     
